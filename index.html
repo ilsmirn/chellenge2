@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Конференция DevMeetup</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="hero">
+  <p class="hero-kicker">15 декабря 2026 года | Москва</p>
+  <h1>КОНФЕРЕНЦИЯ "DEVMEETUP 2026"</h1>
+  <div id="countdown-wrap">
+    <div id="countdown">Загрузка таймера...</div>
+  </div>
+  <a class="hero-cta" href="#register">Зарегистрироваться</a>
+</header>
+
+<section id="about">
+  <h2>О мероприятии</h2>
+  <p>DevMeetup — однодневная конференция для разработчиков: доклады
+  практиков, нетворкинг и обсуждение актуальных технологий. Ждём вас
+  15 декабря 2026 года в Москве!</p>
+</section>
+
+<section id="program">
+  <h2>Программа</h2>
+  <ol class="timeline">
+    <li class="timeline-item">
+      <span class="timeline-time">10:00</span>
+      <div class="timeline-body">
+        <h3>Регистрация и приветственный кофе</h3>
+      </div>
+    </li>
+    <li class="timeline-item">
+      <span class="timeline-time">11:00</span>
+      <div class="timeline-body">
+        <h3>Доклад: "Будущее веб-разработки"</h3>
+        <p class="timeline-speaker">Иван Петров</p>
+      </div>
+    </li>
+    <li class="timeline-item">
+      <span class="timeline-time">12:30</span>
+      <div class="timeline-body">
+        <h3>Доклад: "ИИ в повседневной работе"</h3>
+        <p class="timeline-speaker">Мария Сидорова</p>
+      </div>
+    </li>
+    <li class="timeline-item">
+      <span class="timeline-time">14:00</span>
+      <div class="timeline-body">
+        <h3>Обед</h3>
+      </div>
+    </li>
+    <li class="timeline-item">
+      <span class="timeline-time">15:00</span>
+      <div class="timeline-body">
+        <h3>Панельная дискуссия</h3>
+      </div>
+    </li>
+    <li class="timeline-item">
+      <span class="timeline-time">17:00</span>
+      <div class="timeline-body">
+        <h3>Нетворкинг и завершение</h3>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section id="tickets">
+  <h2>Билеты</h2>
+  <div class="ticket-grid">
+    <article class="ticket-card">
+      <h3>Стандарт</h3>
+      <p class="ticket-price">3000 руб.</p>
+      <p class="ticket-note">Доступ ко всем докладам</p>
+    </article>
+    <article class="ticket-card ticket-card--featured">
+      <span class="ticket-badge">Популярный</span>
+      <h3>VIP</h3>
+      <p class="ticket-price">6000 руб.</p>
+      <p class="ticket-note">Место в первом ряду и обед с спикерами</p>
+    </article>
+    <article class="ticket-card">
+      <h3>Студенческий</h3>
+      <p class="ticket-price">1500 руб.</p>
+      <p class="ticket-note">По студенческому билету</p>
+    </article>
+  </div>
+</section>
+
+<section id="register">
+  <h2>Регистрация</h2>
+  <form id="registerForm">
+    <label>Имя<br><input type="text" id="regName" required></label>
+    <label>Email<br><input type="email" id="regEmail" required></label>
+    <label>Тип билета<br>
+      <select id="regTicket">
+        <option value="Стандарт">Стандарт — 3000 руб.</option>
+        <option value="VIP">VIP — 6000 руб.</option>
+        <option value="Студенческий">Студенческий — 1500 руб.</option>
+      </select>
+    </label>
+    <button type="submit">Зарегистрироваться</button>
+  </form>
+  <p id="registerResult"></p>
+</section>
+
+<footer id="contacts">
+  <h2>Контакты</h2>
+  <p>Вопросы: info@devmeetup.example<br>Телефон: +7 (900) 555-77-88</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
